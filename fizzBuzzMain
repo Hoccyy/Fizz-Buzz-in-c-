@@ -1,0 +1,17 @@
+#include <iostream>
+using std::cout; using std::cin;
+
+int main(){
+    for (int i = 1; i < 100 ; i++)
+    {
+        //
+        if (!(i%3 == 0 && i%5 == 0 )) {
+            if (i%3==0) {cout << "\nFizz";}
+            else if (i % 5 == 0) {cout << "\nBuzz";}
+            else{cout << "\n" << i;}
+        }
+        else {cout << "\nFizzBuzz";} 
+    }
+    //Pauses code momentarily
+    int deleteMe; cin >> deleteMe;
+}
